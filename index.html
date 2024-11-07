@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Vamshi Krishna Portfolio</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Function to show selected section and hide others
+            function showSection(sectionId) {
+                const sections = document.querySelectorAll("section");
+                sections.forEach(section => {
+                    section.style.display = section.id === sectionId ? "flex" : "none";
+                });
+
+                const navLinks = document.querySelectorAll("header nav a");
+                navLinks.forEach(link => {
+                    link.classList.toggle("active", link.getAttribute("href").substring(1) === sectionId);
+                });
+            }
+
+            // Event listeners for navigation links
+            const navLinks = document.querySelectorAll("header nav a");
+            navLinks.forEach(link => {
+                link.addEventListener("click", function (e) {
+                    e.preventDefault();
+                    const targetSection = this.getAttribute("href").substring(1);
+                    showSection(targetSection);
+                });
+            });
+
+            // Show home section by default
+            showSection("home");
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Vamshi Krishna</a>
+        <nav>
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="home" class="home">
+        <div class="home-img">
+            <img src="profile.png" alt="Profile Picture">
+        </div>
+        <div class="home-content">
+            <h1>Hi, It's <span>Vamshi Krishna</span></h1>
+            <h3 class="typing-text">I'm a <span></span></h3>
+            <p>Welcome to my portfolio. I'm a Computer Science Engineering student at Mother Teresa Engineering College, passionate about technology, arts, and writing. My skills include web development, film editing, and digital art. I’m eager to connect and share my journey!</p>
+            <div class="social-icons">
+                <a href="https://linkedin.com/in/vamshi-krishna-687b05315" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/vamshibusiness" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://twitter.com/yourtwitterhandle" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://instagram.com/vamshi_krishna_v7" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/bandavamshikrishna2457" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="mailto:vamshibusiness07@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+            <a href="#" class="btn">@vamshi_krishna_v7</a>
+        </div>
+    </section>
+
+<section id="about">
+    <dev>
+        <h2>About:</h2>
+    
+        <p><strong><span class="highlight">Name:</span></strong> Vamshi Krishna</p>
+        <p><strong><span class="highlight">College:</span> </strong> Mother Teresa College of Engineering and Technology</p>
+        <p><strong><span class="highlight">Standard:</span></strong> Diploma Final Year</p>
+        <p><strong>   <span class="highlight">Branch:</span></strong> Computer Science Engineering</p>
+    
+    
+        <p><strong>   <span class="highlight">About Me:</span></strong> I am passionate about technology, web development, film editing, and digital art. My journey started with a curiosity about how things work and grew into a deep desire to create meaningful projects. I'm always eager to learn new things and collaborate on exciting opportunities.</p>
+        <p><strong>  <span class="highlight">Hobbies:</span></strong> Besides technology, I love exploring the world of art and writing. I find creative expression in digital design, video editing, and writing stories. I also enjoy traveling and photography.</p>
+    </div>
+</section>
+    <section id="skills">
+    
+    <div class="skills-content">
+        <h2>Skills:</h2>
+        <p><strong>   <span class="highlight">Web Development:   </span></strong> HTML, CSS, JavaScript, Node.js</p>
+        <p><strong>   <span class="highlight">Database Management:   </span></strong> MySQL, MongoDB</p>
+        <p><strong>  <span class="highlight">Programming Languages:   </span></strong> Python, C, Java</p>
+        <p><strong>  <span class="highlight">Version Control:   </span></strong> Git, GitHub</p>
+        <p><strong>  <span class="highlight">Design & Editing:   </span></strong> Drawing,Arts,   Adobe Photoshop, Adobe Premiere Pro,Cap Cut,PicsArt,Lightroom.</p>
+    </div>
+</section>
+
+    <section id="projects">
+        
+        <div class="project-content">
+            <h1>My Projects:</h1>
+            <h3>1.Authenticated Medical Documents Releasing with Privacy Protection and Release Control</h3>
+            <p>This project focuses on safeguarding electronic health records (EHRs) by implementing authenticated release control mechanisms to ensure privacy protection for users. It includes a robust system for managing document access and preventing unauthorized release, providing a secure and efficient solution for medical records management.</p>
+            <div class="project-buttons">
+                <a href="vamc.pptx" class="project-btn" download>Download PPT</a>
+                <a href="vamc.pdf" class="project-btn" download>Download PDF</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+           <div class="social-icons">
+        <h2>Contact</h2>
+        <p>If you would like to get in touch, feel free to connect with me on social media or send an email directly.</p>
+       
+            <a href="https://linkedin.com/in/vamshi-krishna-687b05315" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/vamshibusiness" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://twitter.com/yourtwitterhandle" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://instagram.com/vamshi_krishna_v7" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/bandavamshikrishna2457" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="mailto:vamshibusiness07@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+    </section>
+</body>
+</html>
