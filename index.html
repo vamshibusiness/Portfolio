@@ -6,9 +6,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Vamshi Krishna Portfolio</title>
-    <script>
-       
-    </script>
+    <script src="Script.js" defer></script>
+    <script src="js/Script.js" defer></script>
 </head>
 <body>
     <header>
@@ -18,13 +17,14 @@
             <a href="#about">About</a>
             <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
+            <a href="#arts">Arts</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
 
     <section id="home" class="home">
         <div class="home-img">
-            <img src="profile.png" alt="Profile Picture">
+            <img src="profile2.png" alt="Profile Picture">
         </div>
         <div class="home-content">
             <h1>Hi, It's <span>Vamshi Krishna</span></h1>
@@ -54,6 +54,16 @@
     
         <p><strong>   <span class="highlight">About Me:</span></strong> I am passionate about technology, web development, film editing, and digital art. My journey started with a curiosity about how things work and grew into a deep desire to create meaningful projects. I'm always eager to learn new things and collaborate on exciting opportunities.</p>
         <p><strong>  <span class="highlight">Hobbies:</span></strong> Besides technology, I love exploring the world of art and writing. I find creative expression in digital design, video editing, and writing stories. I also enjoy traveling and photography.</p>
+        <h3><span class="highlight">Hobbies & Personal Interests</span></h3>
+        <p>Beyond coding, I have a strong passion for <strong>art and music</strong>. I love <strong>drawing and sketching</strong>, especially using <strong>charcoal pencils and blending techniques</strong>. Expressing creativity through art has always been a big part of my life.</p>
+
+        <p>I'm also currently <strong>learning to play the guitar</strong>. Music helps me stay creative and relaxed, and I'm enjoying exploring different styles and techniques as I improve my skills.</p>
+
+        <h3><span class="highlight">What Drives Me?</span></h3>
+        <p>I love <strong>learning new technologies</strong> and <strong>solving real-world problems</strong> through tech. My goal is to <strong>build innovative applications</strong> that enhance user experiences and <strong>contribute to future technological advancements</strong>.</p>
+
+        <p>I'm always excited to <strong>collaborate, learn, and work on creative projects</strong>. Feel free to explore my work and connect with me!</p>
+    </div>
     </div>
 </section>
     <section id="skills">
@@ -71,7 +81,7 @@
     <section id="projects">
         
         <div class="project-content">
-            <h1>My Projects:</h1>
+            <h2>My Projects:</h2>
             <h3>1.Authenticated Medical Documents Releasing with Privacy Protection and Release Control</h3>
             <p>This project focuses on safeguarding electronic health records (EHRs) by implementing authenticated release control mechanisms to ensure privacy protection for users. It includes a robust system for managing document access and preventing unauthorized release, providing a secure and efficient solution for medical records management.</p>
             <div class="project-buttons">
@@ -80,6 +90,40 @@
             </div>
         </div>
     </section>
+<!-- Adding Arts Section -->
+<section id="arts" class="arts">
+    <div class="arts-content">
+        <h2>My Arts</h2>
+        <div class="art-gallery">
+            <div class="art-item">
+                <div class="art-card" onclick="openSlider('art1.jpg', 'original1.jpg')">
+                    <img src="art1.jpg" alt="Drawing 1" class="front">
+                </div>
+            </div>
+            <div class="art-item">
+                <div class="art-card" onclick="openSlider('art2.jpg', 'original2.jpg')">
+                    <img src="art2.jpg" alt="Drawing 2" class="front">
+                </div>
+            </div>
+            <div class="art-item">
+                <div class="art-card" onclick="openSlider('art3.jpg', 'original3.jpg')">
+                    <img src="art3.jpg" alt="Drawing 3" class="front">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Image Slider Popup -->
+<div id="imageSlider" class="slider-container">
+    <div class="slider-content">
+        <span class="close-btn" onclick="closeSlider()">&times;</span>
+        <div class="slider-images">
+            <img id="sliderFront" src="" alt="Art Image" class="slider-img">
+            <img id="sliderBack" src="" alt="Original Image" class="slider-img">
+        </div>
+    </div>
+</div>
 
     <section id="contact">
            <div class="social-icons">
