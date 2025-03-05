@@ -546,3 +546,139 @@ nav a.active {
         margin: 1rem 1rem 1rem 0; /* Adjust spacing between icons */
     }
 }
+<style>
+.arts {
+    padding: 5rem 9%;
+    text-align: left;
+    background-color: black;
+    color: white;
+}
+.arts h2 {
+    font-size: 3rem;
+    color: #b74b4b;
+    margin-bottom: 2rem;
+}
+.art-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+.art-gallery img {
+    width: 30%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease;
+}
+.art-gallery img:hover {
+    transform: scale(1.1);
+}
+</style>
+.art-card img {
+    backface-visibility: hidden !important;
+}
+.arts {
+    padding: 5rem 9%;
+    text-align: left;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+}
+.arts h2 {
+    font-size: 3rem;
+    color: #b74b4b;
+    margin-bottom: 2rem;
+}
+.art-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+.art-item {
+    perspective: 1000px;
+}
+.art-card {
+    width: 250px;
+    height: 250px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+.art-card img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+.arts {
+    padding: 5rem 9%;
+    text-align: left;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+}
+.arts h2 {
+    font-size: 3rem;
+    color: #b74b4b;
+    margin-bottom: 2rem;
+    text-align: left;
+}
+.art-gallery {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+.art-item {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.art-card img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+/* Slider Popup */
+.slider-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+.slider-content {
+    position: relative;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+}
+.slider-images {
+    display: flex;
+    overflow: hidden;
+}
+.slider-img {
+    width: 100%;
+    transition: transform 0.5s ease;
+}
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+}
