@@ -546,7 +546,7 @@ nav a.active {
         margin: 1rem 1rem 1rem 0; /* Adjust spacing between icons */
     }
 }
-<style>
+/* changes*/
 .arts {
     padding: 5rem 9%;
     text-align: left;
@@ -573,7 +573,7 @@ nav a.active {
 .art-gallery img:hover {
     transform: scale(1.1);
 }
-</style>
+/* changed */
 .art-card img {
     backface-visibility: hidden !important;
 }
@@ -669,10 +669,10 @@ nav a.active {
 }
 .slider-images {
     display: flex;
-    overflow: hidden;
+    overflow: ;
 }
 .slider-img {
-    width: 100%;
+    width: 50%;
     transition: transform 0.5s ease;
 }
 .close-btn {
